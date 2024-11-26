@@ -1,0 +1,5 @@
+<launch>
+  <group ns="labrob_crowd_navigation">
+      <node pkg="labrob_crowd_control" type="cbf_qp_motion_generation_manager" name="cbf_qp_motion_generation_manager" output="screen" />
+  </group>
+</launch>

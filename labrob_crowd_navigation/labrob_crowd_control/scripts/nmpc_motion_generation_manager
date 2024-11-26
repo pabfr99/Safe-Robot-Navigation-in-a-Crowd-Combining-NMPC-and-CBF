@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+
+import labrob_crowd_control.NMPCMotionGenerationManager
+if __name__ == '__main__':
+    labrob_crowd_control.NMPCMotionGenerationManager.main()

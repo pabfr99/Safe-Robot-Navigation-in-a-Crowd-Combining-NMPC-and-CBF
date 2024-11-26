@@ -1,0 +1,5 @@
+<launch>
+  <group ns="labrob_crowd_navigation">
+      <node pkg="labrob_crowd_perception" type="crowd_perception_laser_scan" name="crowd_perception_laser_scan" output="screen" />
+  </group>
+</launch>

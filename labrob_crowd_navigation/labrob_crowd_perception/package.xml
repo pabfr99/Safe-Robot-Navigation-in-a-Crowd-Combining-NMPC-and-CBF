@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>labrob_crowd_perception</name>
+  <version>0.0.0</version>
+  <description>The labrob_crowd_perception package</description>
+  <maintainer email="cipriano@diag.uniroma1.it">Michele Cipriano</maintainer>
+  <license>TODO</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>rospy</depend>
+  <depend>cv_bridge</depend>
+  <depend>labrob_crowd_navigation_msgs</depend>
+  <depend>labrob_crowd_navigation_utils</depend>
+  <depend>message_filters</depend>
+  <depend>pal_detection_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <exec_depend>pal_person_detector_opencv</exec_depend>
+</package>

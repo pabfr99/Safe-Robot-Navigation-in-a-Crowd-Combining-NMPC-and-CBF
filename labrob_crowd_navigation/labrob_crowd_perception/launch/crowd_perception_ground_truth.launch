@@ -1,0 +1,5 @@
+<launch>
+  <group ns="labrob_crowd_navigation">
+      <node pkg="labrob_crowd_perception" type="crowd_perception_ground_truth" name="crowd_perception_ground_truth" output="screen" />
+  </group>
+</launch>

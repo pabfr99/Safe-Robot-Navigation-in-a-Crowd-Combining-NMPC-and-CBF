@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+
+import labrob_crowd_perception.CrowdPerceptionLaserScan
+if __name__ == '__main__':
+    labrob_crowd_perception.CrowdPerceptionLaserScan.main()

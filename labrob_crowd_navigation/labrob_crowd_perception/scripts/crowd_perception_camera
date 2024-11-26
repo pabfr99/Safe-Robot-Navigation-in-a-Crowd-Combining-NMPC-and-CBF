@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+
+import labrob_crowd_perception.CrowdPerceptionCamera
+if __name__ == '__main__':
+    labrob_crowd_perception.CrowdPerceptionCamera.main()

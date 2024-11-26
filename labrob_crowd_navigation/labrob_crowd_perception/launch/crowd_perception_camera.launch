@@ -1,0 +1,19 @@
+<launch>
+  <arg name="max_rate"  default="5"/>
+  <arg name="scale"     default="0.5"/>
+  <arg name="image"     default="/xtion/rgb/image_raw"/>
+  <arg name="transport" default="raw"/>
+
+  <group ns="labrob_crowd_navigation">
+    <!-- Run crowd perception module using camera only -->
+    <node pkg="labrob_crowd_perception" type="crowd_perception_camera" name="crowd_perception_camera" output="screen" />
+
+    <!-- Run person detector from PAL Robotics -->
+    <node name="person_detector" pkg="pal_person_detector_opencv" type="pal_person_detector_opencv" output="screen">
+      <param name="image" value="$(arg image)"/>
+      <param name="rate"  value="$(arg max_rate)"/>
+      <param name="scale" value="$(arg scale)"/>
+      <param name="transport" value="$(arg transport)"/>
+    </node>
+  </group>
+</launch>
